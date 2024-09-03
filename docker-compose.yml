@@ -7,4 +7,5 @@ services:
       - "5000:5000"
     environment:
       - FLASK_ENV=production
-    restart: always
+      - PYTHONUNBUFFERED=1
+    restart: on-failure
