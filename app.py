@@ -1,7 +1,7 @@
 from flask import Flask, render_template, request
 import requests
 
-app = Flask(__name__)
+app = Flask(__name__, template_folder='templates')
 
 API_KEY = "76e2c093354bc4b6d67c7fe2"  # 请替换为您的实际API密钥
 BASE_URL = f"https://v6.exchangerate-api.com/v6/{API_KEY}/latest/USD"
